@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @RenderBody()
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+    <script type="text/javascript" src="~/Scripts/customScripts/Bonus joker/BonusJokerNextQuestion.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Bonus joker/BonusJokerMain.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Bonus joker/enDodanJoker.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Bonus joker/IsRightBonus.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Main game/eventFire.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Main game/FetchQuestion.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Bonus joker/FetchQuestionBonusJoker.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Main game/GivenAnswerConsequence.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Main game/IgraJoker.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Main game/MusicInQuestion.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Main game/oneDownAndFinish.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Using joker button/MakeChoice.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Using joker button/UseJoker.js"></script>
+    <script type="text/javascript" src="~/Scripts/customScripts/Using joker button/VzemiEnegaJokerja.js"></script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>

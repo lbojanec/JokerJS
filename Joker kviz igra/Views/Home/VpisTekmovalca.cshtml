@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutUvod.cshtml";
+}
+
+
+
+<div class="full">
+    <div> </div>
+    <div class="vpisTekmovalca">
+
+        <div class="opisIgre">
+            <p id="napis">
+                PRAV LEPO POZDRAVLJENI V KVIZU JOKER!
+                <br /> <br />
+                Igra je narejena po formatu kviza Joker, ki se
+                predvaja na RTV Slovenija. Igralec v kvizu
+                odgovarja na 12 vprašanj, vmes pa se vzpenja in
+                pada po 7 stopenjski denarni lestvici od 0
+                do 20000 evrov. V primeru napačnega odgovora
+                tekmovalec izgubi 3 Jokerje, če pa jih nima
+                se spusti za 3 stopnje na denarni lestvici.
+                Prijavi se in začni z igro JOKER in osvoji
+                20000 evrov.
+
+            </p>
+        </div>
+        <p id="napis"> IME: </p>
+
+        <div class="JokerTemplate">
+            <div></div>
+            <input id="JokerInput" value="JOKER" />
+            <div></div>
+        </div>
+        <br /> <br /> <br />
+
+        <p id="napis"> KRAJ: </p>
+        <div class="JokerTemplate">
+            <div></div>
+            <input id="JokerInput" value="JOKER" />
+            <div></div>
+        </div>
+
+        <br /> <br /> <br />  <br /> <br /> <br />
+        <a id="zacniIgro" href="~/Home/Igra">
+            <div class="JokerTemplate">
+                <div></div>
+                <div id="JokerInput"> IGRAJ </div>
+                <div></div>
+            </div>
+        </a>
+
+
+
+
+    </div>
+    <div> </div>
+</div>

@@ -1,0 +1,316 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutUvod.cshtml";
+    
+}
+
+
+
+<div class="fullIgra">
+
+    <audio playsinline autoplay src="/Content/audio/uvodnaSpicaSound.mp3"></audio>
+    <div class="zgornjiDelIgre" id="zgornjiDelIgre">
+
+        <div class="denar20K-finish" id="denar20K-finish">
+            <div>
+
+            </div>
+            <div class="stevilka-finish" id="stevilka-finish">
+                <p class="denarStevilkaFontGold" id="Dc7-finish" style="color: #BC8339">  </p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="igralniProstor">
+
+        <div class="Jokerji">
+            <div class="Joker" id="Ja9">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb9">
+                    <p class="JokerBesedaFont" id="Jc9">  JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja8">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb8">
+                    <p class="JokerBesedaFont" id="Jc8">  JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+
+            <div class="Joker" id="Ja7">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb7">
+                    <p onclick="" class="JokerBesedaFont" id="Jc7">  JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja6">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb6">
+                    <p class="JokerBesedaFont" id="Jc6"> JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja5">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb5">
+                    <p class="JokerBesedaFont" id="Jc5"> JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja4">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb4">
+                    <p class="JokerBesedaFont" id="Jc4"> JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja3">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb3">
+                    <p class="JokerBesedaFont" id="Jc3"> JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja2">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb2">
+                    <p class="JokerBesedaFont" id="Jc2"> JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="Joker" id="Ja1">
+                <div>
+
+                </div>
+                <div class="JokerBeseda" id="Jb1">
+                    <p class="JokerBesedaFont" id="Jc1"> JOKER </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        <div class="JokerQuestionCenter">
+            <div class="JokerQuestionCenterUp">
+                <div class="Odstopi">
+
+                    <button class="gumbOdstopi" id="gumbOdstopi" onclick="oneDownAndFinish()">
+                        <p>Odstopi</p>
+                    </button>
+
+                </div>
+                <div class="JokerGumbProstorWhole">
+                    <div class="GumbBonusIzbira">
+                        <div class="izberi"><button id="AB" onclick="MakeChoice('A','B')">AB</button></div>
+                        <div class="izberi"><button id="CD" onclick="MakeChoice('C','D')">CD</button></div>
+                        <div class="izberi"><button id="AC" onclick="MakeChoice('A','C')">AC</button></div>
+                    </div>
+                    <div class="JokerGumbProstor">
+
+                        <div>
+                            <a class="JokerStart" onmousedown="IgraJoker()" id="JokerStart">
+                                <div class="Joker" id="NaslednjeVprasanje">
+                                    <div>
+
+                                    </div>
+                                    <div class="JokerBeseda">
+
+                                        <p id="Igraj" class="JokerBesedaFont"> IGRAJ  </p>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <a class="JokerStart" onmousedown="BonusJokerNextQuestion()" id="BonusJoker">
+                                <div class="Joker" id="BonusJokerGumb">
+                                    <div>
+
+                                    </div>
+                                    <div class="JokerBeseda">
+
+                                        <p id="Igraj" class="JokerBesedaFont"> BONUS  </p>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <button onmousedown="UseJoker()" class="PiramidaZaGumb" id="GumbJoker">
+                        </button>
+                        <div class="StebricekZaGumb">
+
+                        </div>
+
+                    </div>
+                    <div class="GumbBonusIzbira">
+                        <div class="izberi"><button id="BD" onclick="MakeChoice('B','D')">BD</button></div>
+                        <div class="izberi"><button id="AD" onclick="MakeChoice('A','D')">AD</button></div>
+                        <div class="izberi"><button id="BC" onclick="MakeChoice('B','C')">BC</button></div>
+                    </div>
+                </div>
+                <div class="CasZaOdgovor">
+                    <div class="zadetki" id="zadetki">
+                        <p id="zadetkiBonusJoker"> </p>
+                    </div>
+                    <div class="ura" id="ura">
+                        <p id="Time"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="Question">
+                <div class="QuestionQuestion" id="stevilkaInVprasanje">
+                    <div class="QuestionNumber">
+                        <div class="QuestionNow">
+                            <p class="QuestionNowFont" id="QuestionNowFont">1</p>
+                        </div>
+                        <div class="QuestionAll">
+                            <p class="QuestionAllFont">12</p>
+                        </div>
+                    </div>
+                    <div class="QuestionWords" id="Vprasanje">
+                        <p class="QuestionFont" id="Q">  </p>
+                    </div>
+                </div>
+                <div class="QuestionAnswers">
+                    <button id="A" onmousedown="GivenAnswerConsequence(); isRightBonus()" onkeypress="GivenAnswerConsequence(); isRightBonus()" class="AnswerA">
+                    </button>
+                    <button id="B" onmousedown="GivenAnswerConsequence(); isRightBonus()" onkeypress="GivenAnswerConsequence(); isRightBonus()" class="AnswerB">
+                    </button>
+                    <button id="C" onmousedown="GivenAnswerConsequence()" onkeypress="GivenAnswerConsequence()" class="AnswerC">
+                    </button>
+                    <button id="D" onmousedown="GivenAnswerConsequence()" onkeypress="GivenAnswerConsequence()" class="AnswerD">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="DenarnaLestvica">
+            <div class="denar20K" id="Da7">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db7">
+                    <p class="denarStevilkaFontGold" id="Dc7"> 20000 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="denar" id="Da6">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db6">
+                    <p class="denarStevilkaFont" id="Dc6"> 7000 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="denar" id="Da5">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db5">
+                    <p class="denarStevilkaFont" id="Dc5"> 3000 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="denar" id="Da4">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db4">
+                    <p class="denarStevilkaFont" id="Dc4"> 1000 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="denar" id="Da3">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db3">
+                    <p class="denarStevilkaFont" id="Dc3"> 500 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="denar" id="Da2">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db2">
+                    <p class="denarStevilkaFont" id="Dc2"> 200 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="denar" id="Da1">
+                <div>
+
+                </div>
+                <div class="stevilka" id="Db1">
+                    <p class="denarStevilkaFont" id="Dc1"> 0 € </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

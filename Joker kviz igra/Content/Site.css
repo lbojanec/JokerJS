@@ -1,0 +1,502 @@
+﻿body {
+    /*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
+}
+
+.fullVideo{
+    align-content:center;
+    width:100%;
+    height:100%;
+
+}
+
+.full {
+    display: grid;
+    grid-template-columns:1fr 4fr 1fr;
+    background-color: #1742B2;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    grid-auto-rows:1000px;
+}
+
+.vpisTekmovalca{
+    background-color:ghostwhite;
+    position:relative;  /*GUMB ZAČNI SPRAVITI DOL*/
+    padding-top:8%;
+    padding-left:30%;
+    padding-right:30%;
+    
+    text-align:center;
+    height:100%;
+}
+
+
+
+.opisIgre{
+    width:200%;
+    text-align:center;
+    margin-left:-50%;
+    padding-bottom:30px;
+
+    
+  
+}
+
+#zacniIgro{
+    margin:0 auto;
+}
+
+
+
+
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.videoDiv{
+    background-color:blue;
+}
+
+video{
+    align-content:center;
+}
+
+.JokerTemplate{
+    display:grid;
+    margin-bottom:70px; /*NAMESTO BR*/
+    grid-template-rows:1fr 2fr 1fr;
+    height:50px;
+    width:250px;
+    border-radius:10px;
+    background-color:yellow;
+    margin:0 auto;
+}
+
+
+
+#JokerInput{
+    background-color:darkblue;
+    text-align:center;
+    color:yellow;
+    font-size:20px;
+    
+}
+
+#napis{
+    color:darkblue;
+    font-size:25px;
+}
+
+.fullIgra {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    background-image: url("/Pictures/studioBackground.jfif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-content: center;
+    height: 100vh;
+    grid-auto-rows: 1000px;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+
+.zgornjiDelIgre {
+    position:relative;
+    margin-left: 20%;
+    margin-right:20%;
+    height:auto;
+    background:none; 
+}
+
+.igralniProstor {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+ 
+}
+
+.Jokerji {
+    display: grid;
+    grid-template-columns: repeat(1fr, 9);
+}
+
+.JokerQuestionCenter{
+    display:grid;
+    grid-template-rows:3fr 4fr;
+    
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.DenarnaLestvica {
+    
+    display:grid;
+    grid-template-columns:repeat(1fr, 7);
+}
+
+.JokerQuestionCenterUp {
+   display:grid;
+   grid-template-columns: 1fr 5fr 1fr;
+}
+
+
+.Question {
+    display: grid;
+    grid-template-rows: 7fr 8fr;
+    background-color:#1742B2;
+    z-index:1;
+}
+
+.QuestionQuestion {
+    display: grid;
+    background-color: #1742B2;
+    grid-template-columns: 1fr 10fr;
+}
+
+.QuestionAnswers {
+    display: grid;
+    margin:1px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1742B2;
+}
+
+.QuestionNumber {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #1742B2;
+    background: linear-gradient( #01286C, #014A91);
+}
+
+.QuestionWords {
+    background: linear-gradient(#02053D, #014A91);
+    position:relative;
+}
+
+.QuestionWords p {
+    color:white;
+    text-align:center;
+    font-size:30px;
+    position:relative;
+    top:30%;
+    width:90%;
+    left:5%;
+    right:5%;
+    
+}
+
+.QuestionNow {
+    background: linear-gradient(#01286C, #014E97);
+}
+
+.QuestionAll {
+    background: linear-gradient(#01286C, #014E97);
+}
+
+.AnswerA {
+    background: linear-gradient(#02053D, #014A91);
+    padding-left: 2%;
+    padding-right: 2%;
+    border:none;
+
+}   
+    .AnswerA, .AnswerB, .AnswerC, .AnswerD{
+        color:white;
+    }    
+
+    .AnswerA:hover, .AnswerB:hover, .AnswerC:hover, .AnswerD:hover{
+        background: #01C7F0;
+    }
+
+      .AnswerA:focus, .AnswerB:focus, .AnswerC:focus, .AnswerD:focus{
+        background: #01C7F0;
+        border:none;
+        outline:none;
+    }
+
+
+.AnswerB {
+    background: linear-gradient(#02053D, #014A91);
+    padding-left: 2%;
+    padding-right: 2%;
+    border: none;
+}
+
+.AnswerC {
+    background: linear-gradient(#02053D, #014A91);
+    padding-left: 2%;
+    padding-right: 2%;
+    border: none;
+}
+
+.AnswerD {
+    background: linear-gradient(#02053D, #014A91);
+    padding-left: 2%;
+    padding-right: 2%;
+    border: none;
+}
+
+
+
+.denar {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    background-color: #54537E;
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom:1%;
+}
+
+.denar20K {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    background-color: #54537E;
+    border-radius: 100px;
+    margin-bottom:1%;
+   
+}
+
+.denar20K-finish {    /*  ZA IZPIS KONČNEGA DENARJA*/
+    display: none;
+    grid-template-rows: 1fr 5fr 1fr;
+    background-color: #BC8339;
+    border-radius: 100px;
+    margin-bottom: 1%;
+    margin: 0 auto;
+    width:30%;
+    top:30%;
+    position:relative;
+}
+
+
+
+.stevilka {
+    background-color: #BAACC8;
+    border-radius: 100px;
+}
+
+.stevilka-finish {
+    background-color: #11167A;
+    border-radius: 100px;
+}
+
+.denarStevilkaFont {
+    color: #54537E;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    height:100%;
+}
+
+.denarStevilkaFontGold {
+    color: #E4D59F;
+    text-align: center;
+    font-size:45px;
+    font-weight:bold;
+    height:100%;
+ 
+    
+}
+
+.Joker {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    background-color: #E09C42;
+    border-radius: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+
+.JokerBeseda {
+    background-color: #11167A;
+    border-radius:100px;
+}
+
+.JokerStart:hover{
+    cursor:pointer;
+    text-decoration-line:none;
+}  
+
+.JokerBesedaFont {
+    color: #BC8339;
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100%;
+}
+
+.QuestionNowFont{
+    color:white;
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+}
+
+.QuestionAllFont {
+    color: #68B4F7;
+    text-align: center;
+    font-size:40px;
+    font-weight:700;
+}
+
+.QuestionAnswers{
+    color:white;
+    position:relative;
+    font-size:20px;
+    
+}
+
+.Odstopi{
+    position:relative;
+}
+
+.JokerGumbProstorWhole{
+    display:grid;
+    grid-template-columns: 7fr 6fr 7fr;
+}
+
+.JokerGumbProstor{
+    display:grid;
+    grid-template-rows:12fr 6fr 1fr;
+}
+
+.GumbBonusIzbira{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    margin:10%;
+
+}
+
+.izberi {
+    text-align: center;
+}
+
+#BD, #AD, #BC{
+    float:right;
+}
+
+.izberi button{
+    background: linear-gradient(#02053D, #014A91);
+    color: white;
+    outline:none;
+    border:none;
+    width:60%;
+    height:75%;
+    font-size:20px;
+    font-weight:500;
+}
+
+    .izberi button:hover {
+        background: linear-gradient(#BC8339, #014A91);
+    }
+
+.PiramidaZaGumb {
+    background-color: #F7F7FB;
+    border-top-left-radius:200px;
+    border-top-right-radius:200px;
+    position:relative;
+    top:0%;
+}
+
+.PiramidaZaGumb:hover{
+    background-color:aqua;
+}
+
+.PiramidaZaGumb:active{
+    background-color:aqua;
+    top:16%;
+    
+}
+
+
+.StebricekZaGumb{
+    background-color:black;
+    margin-left:45%;
+    margin-right:45%;
+}
+
+.CasZaOdgovor{
+    position:relative;
+}
+
+.zadetki {
+    position: absolute;
+    height: 16%;
+    width: 84%;
+    background: linear-gradient(#822992, #752583);
+}
+
+
+.ura {
+    position: absolute;
+    top: 84%;
+    height: 16%;
+    width: 84%;
+    background: linear-gradient(#02053D, #014A91);
+}
+
+.ura p{
+    color:white;
+    font-size:32px;
+    font-weight:600;
+    text-align:center;
+}
+
+.zadetki p {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.gumbOdstopi {
+    position: absolute;
+    background: linear-gradient(#02053D, #014A91);
+    top: 84%;
+    right: 0;
+    height: 16%;
+    width: 84%;
+    border-style:none;
+}
+
+    .gumbOdstopi:hover {
+        background: linear-gradient(#ff1616, #014A91);
+    }
+
+    .gumbOdstopi p {
+       
+        outline:none;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .zacniIgro{
+        color:white;
+    }
+    
